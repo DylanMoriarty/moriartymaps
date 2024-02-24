@@ -10,7 +10,7 @@ jobs:
     - uses: actions/checkout@master
 
     - name: Deploy
-      uses: s0/git-publish-subdir-action@src
+      uses: s0/git-publish-subdir-action@develop
       env:
         REPO: self
         BRANCH: master
