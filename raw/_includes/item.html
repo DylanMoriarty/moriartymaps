@@ -1,0 +1,10 @@
+<div class="
+    item {% if include.half %}item_half{% endif %}
+    {% if include.black %}item_black{% endif %}"
+>
+    <a href="{{ include.link }}" target="_blank" class="no_underline">
+        <img 
+            src={{site.baseurl}}/assets/graphics/{{include.type}}/{{include.img}}/>
+    </a>
+    <p><a href='{{ include.link }}' target="_blank">{{ include.linkname }} ↗</a>, {{ include.descrip }}</p>
+</div>

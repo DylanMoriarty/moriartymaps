@@ -37,7 +37,7 @@ body {
 ol {
     display: inline-block;
     width: 100%;
-    margin: 14px 0 2rem 0;
+    margin: 14px 0 0 0;
     padding: 0 0 14px 0;
     border-bottom: 2px solid black;
 }
@@ -60,29 +60,55 @@ li {
 
 .map-box {
     max-width: 1000px;
-    margin: 0 auto 6rem;
+    margin: 8px auto 6rem;
     position: relative;
     padding: 0 10px;
 }
 
 .item {
-    margin: 0;
-    padding: 0;
+    margin: 0 0 0 0;
+    padding: 0 4px;
     display: inline-block;
     vertical-align: top;
 
+    font-family: 'Lora', sans-serif;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+
+    a { 
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
     &_half {
-        width: calc(50% - 5px);
+        width: calc(50% - 16px);
+    }
+
+    &_black img {
+        border-color: black !important;
     }
 
     img {
+        border: 1px solid #aaa;
         max-width: 100%;
+        transition: 0.2s;
+
+        &:hover {
+            cursor: pointer;
+            transform: translateY(-4px);
+            box-shadow: 0 2px 0 black;
+        }
+    }
+
+    p {
+        margin-top: 2px;
     }
 }
 
 #footer {
     border-top: 1px solid black;
-    margin-top: 4px;
+    margin-top: 2px;
     padding: 12px 0;
     width: 100%;
 }
@@ -100,9 +126,14 @@ li {
 
 .about-cont {
     margin: 4rem auto 6rem;
-    max-width: 600px;
+    max-width: 500px;
     text-align: left;
     font-size: 18px;
-    line-height: 24px;
-    font-family: Helvetica, sans-serif
+    line-height: 30px;
+    font-family: 'Lora', sans-serif
+}
+
+.wip {
+    padding: 10px 0;
+    background-color: rgb(255, 255, 177);
 }
