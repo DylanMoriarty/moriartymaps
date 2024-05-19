@@ -4,6 +4,8 @@
 .bundle
 bundle
 
+*/.DS_Store
+
 # Local
 node_modules
 .tmp
