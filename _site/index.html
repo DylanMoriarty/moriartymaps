@@ -11,8 +11,12 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Cormorant+Garamond:ital,opsz,wght@1,300;1,400display=swap" rel="stylesheet">
+
+  <!-- family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap -->
+
+  <!-- https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito+Sans:ital,opsz,wght@0,0,200..500;1,0,200..500&display=swap -->
+
   <!-- build:css /assets/styles/main.css -->
     <link rel="stylesheet" href="/assets/styles/main.css">
   <!-- endbuild -->
@@ -79,11 +83,11 @@
 <div class="line"></div>
 <div class="line"></div>
 
-<ol>
-    <li><a href="/illos" class="no_underline ">Illustrations</a></li>
-    <li><a href="/" class="no_underline nav-active">News Maps</a></li>
-    <li><a href="https://www.etsy.com/shop/moriartymaps" target="_blank" class="no_underline">Shop↗</a></li>
-    <li><a href="https://moriartynaps.org/" target="_blank" class="no_underline">Naps↗</a></li>
+<ol class="nav">
+    <!-- <li><a href="/illos" class="no_underline ">Illustrated Maps</a></li> -->
+    <li><a href="/" class="no_underline nav-active">Works</a></li>
+    <li><a href="https://www.etsy.com/shop/moriartymaps" target="_blank" class="no_underline disable">Shop↗</a></li>
+    <li><a href="https://moriartynaps.org/" target="_blank" class="no_underline">Blog↗</a></li>
     <li><a href="/about" class="no_underline ">About</a></li>
     <li>
         <a href="https://www.instagram.com/moriartymaps/" target="_blank" class="no_underline">
@@ -100,85 +104,749 @@
 <div class="line"></div>
 
 <div class="site-home">
-  <div class="map-box">
-  <div class="
-    item item_half
-    item_black"
->
-    <a href="https://www.washingtonpost.com/science/interactive/2024/map-totality-solar-eclipse-locations/" target="_blank" class="no_underline">
-        <img 
-            src=/assets/graphics/illo-maps/eclipse.jpg/>
-    </a>
-    <p><a href='https://www.washingtonpost.com/science/interactive/2024/map-totality-solar-eclipse-locations/' target="_blank">Follow a mile-by-mile map of the total solar eclipse ↗</a>, an immersive looong relief map of everything under the shadow of the moon.</p>
+  <div class="works-filter">
+  <ol>
+    <li>Filter by:</li>
+    <li>
+      <input type="checkbox" id="n" name="cat"/> 
+      <label for="n">News Graphics</label>
+    </li>
+    <li>
+      <input type="checkbox" id="m" name="cat"/> 
+      <label for="m">Illustrated Maps</label>
+    </li>
+    <li>
+      <input type="checkbox" id="i" name="cat"/> 
+      <label for="i">Interactives</label>
+    </li>
+    <li>
+      <input type="checkbox" id="p" name="cat"/> 
+      <label for="p">Personal Projects</label>
+    </li>
+    <!-- <li>
+      <input type="checkbox" id="s" /> 
+      <label for="s">Prints Available</label>
+    </li> -->
+  </ol>
 </div>
 
+<div class="map-box">
+<div class="
+    item 
+    item_1
+    
+    &s &m &p"
+    >
+    <a href="#"  class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/illo-maps/muffins.png);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link "
+        >
+         Muffins & Metros</p>
+        </div>
+    </a>
+</div>
+
+
+<!-- grid-column-start:;
+grid-column-end:; -->
+
+
   <div class="
-    item item_half
-    "
->
+    item 
+    item_2
+    
+    &i &m &p"
+    >
     <a href="https://moriartynaps.org/maps-from-home" target="_blank" class="no_underline">
-        <img 
-            src=/assets/graphics/illo-maps/maps-from-home.png/>
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/illo-maps/maps-from-home.png);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link "
+        >
+        Maps from Home ↗</p>
+        </div>
     </a>
-    <p><a href='https://moriartynaps.org/maps-from-home' target="_blank">Maps from Home ↗</a>, a personal project reconciling.</p>
 </div>
+
+
+<!-- grid-column-start:;
+grid-column-end:; -->
+
 
   <div class="
-    item item_half
-    "
->
-    <a href="" target="_blank" class="no_underline">
-        <img 
-            src=/assets/graphics/illo-maps/lagos.gif/>
+    item 
+    item_1
+    
+    &n &m"
+    >
+    <a href="https://www.washingtonpost.com/travel/2022/10/15/germany-trip-itinerary-munich-berlin/" target="_blank" class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/illo-not-maps/drawn-thru-deutschland.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link "
+        >
+        Drawn thru Deutschland ↗</p>
+        </div>
     </a>
-    <p><a href='' target="_blank"> ↗</a>, <a href='https://www.washingtonpost.com/world/interactive/2021/africa-cities/'>Africa's Rising Cities ↗</a>, a look at Africa's projected population boom over the next century.</p>
 </div>
+
+
+<!-- grid-column-start:;
+grid-column-end:; -->
+
 
   <div class="
-    item item_half
-    "
->
-    <a href="" target="_blank" class="no_underline">
-        <img 
-            src=/assets/graphics/illo-maps/pizza.avif/>
+    item 
+    item_1
+    
+    &n &m"
+    >
+    <a href="https://www.washingtonpost.com/home/interactive/2024/temporary-garden-temperance-alley-dc/" target="_blank" class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/works/temperance-alley.png);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link "
+        >
+        D.C.'s Secret Garden ↗</p>
+        </div>
     </a>
-    <p><a href='' target="_blank"> ↗</a>, <a href='https://www.washingtonpost.com/travel/interactive/2023/best-pizza-map-style-near-you/?itid=ap_dylanmoriarty'>Look up the best regional pizza in your state ↗</a>, an interactive tool that lets you search for the best pizzeria's in your state.</p>
 </div>
+
+
+<!-- grid-column-start:;
+grid-column-end:; -->
+
+
+<div class="
+    item 
+    item_2
+    
+    &n &i"
+    >
+    <a href="https://www.washingtonpost.com/science/interactive/2024/map-totality-solar-eclipse-locations/" target="_blank" class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/illo-maps/eclipse.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link item_link_dark"
+        >
+        Follow a mile-by-mile map of the total solar eclipse ↗</p>
+        </div>
+    </a>
+</div>
+
+
+<!-- grid-column-start:;
+grid-column-end:; -->
+
 
   <div class="
-    item item_half
-    "
->
-    <a href="" target="_blank" class="no_underline">
-        <img 
-            src=/assets/graphics/illo-maps/covers.jpeg/>
+    item 
+    item_3
+    
+    &p"
+    >
+    <a href="https://moriartynaps.org/foggy-spaces/" target="_blank" class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/works/foggy.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link item_link_dark"
+        >
+        Foggy Spaces ↗</p>
+        </div>
     </a>
-    <p><a href='' target="_blank"> ↗</a>, <a href='https://moriartynaps.org/maps-from-home'>Covers ↗</a>, a personal project reconciling.</p>
-</div>
-
-  <!-- <div class="item item_half">
-      <img 
-          src=/assets/graphics/illo-maps/maps-from-home.png/>
-  </div>
-  <div class="item item_half">
-      <img src=/assets/graphics/illo-maps/covers.gif>
-  </div> -->
-
-
-  <div class="item">
-      <img src=/assets/graphics/illo-maps/cakes.jpg></div>
-  </div>
 </div>
 
 
-<!-- 
-  WERNER
-  SNOWFALL
-  MINI-GOLF
-  CHRISTMAS TREES
--->
+<!-- grid-column-start:1;
+grid-column-end:5; -->
 
 
+  <div class="
+    item 
+    item_1
+    
+    &p &m"
+    >
+    <a href="#"  class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/illo-not-maps/presidents.gif);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link "
+        >
+        </p>
+        </div>
+    </a>
+</div>
+
+
+<!-- grid-column-start:;
+grid-column-end:; -->
+
+
+  <div class="
+    item 
+    item_3
+    
+    &n &m &i"
+    >
+    <a href="https://www.washingtonpost.com/politics/interactive/2022/redistricting-mini-golf/" target="_blank" class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/works/gerrymander2.png);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link "
+        >
+        Gerrymander Invitational ↗</p>
+        </div>
+    </a>
+</div>
+
+
+<!-- grid-column-start:;
+grid-column-end:; -->
+
+
+  <div class="
+    item 
+    item_2
+    
+    &n &i"
+    >
+    <a href="https://www.washingtonpost.com/world/interactive/2021/africa-cities/" target="_blank" class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/illo-maps/lagos.gif);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link "
+        >
+        Africa's Rising Cities ↗</p>
+        </div>
+    </a>
+</div>
+
+
+<!-- grid-column-start:;
+grid-column-end:; -->
+
+
+  <div class="
+    item 
+    item_4
+    
+    &i &m &p &s"
+    >
+    <a href="https://moriartynaps.org/covers/" target="_blank" class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/works/covers.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link "
+        >
+        Covers ↗</p>
+        </div>
+    </a>
+</div>
+
+
+<!-- grid-column-start:;
+grid-column-end:; -->
+
+
+  <div class="
+    item 
+    item_2
+    
+    &i &p &s"
+    >
+    <a href="https://moriartynaps.org/cake/" target="_blank" class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/works/chocolate.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link item_link_dark"
+        >
+        Cake Maps ↗</p>
+        </div>
+    </a>
+</div>
+
+
+<!-- grid-column-start:1;
+grid-column-end:5; -->
+
+
+  <div class="
+    item 
+    item_2
+    
+    &n &i"
+    >
+    <a href="https://www.washingtonpost.com/travel/interactive/2023/best-pizza-map-style-near-you/" target="_blank" class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/works/pizza.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link "
+        >
+        Best regional pizzas ↗</p>
+        </div>
+    </a>
+</div>
+
+
+<!-- grid-column-start:;
+grid-column-end:; -->
+
+
+  <div class="
+    item 
+    item_1
+    
+    &p"
+    >
+    <a href="#"  class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/works/xmas-card.png);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link item_link_dark"
+        >
+        </p>
+        </div>
+    </a>
+</div>
+
+
+<!-- grid-column-start:1;
+grid-column-end:5; -->
+
+
+  <div class="
+    item 
+    item_1
+    
+    &n"
+    >
+    <a href="https://www.washingtonpost.com/food/2023/11/09/thanksgiving-recipes-joy-of-cooking/" target="_blank" class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/works/thanks.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link "
+        >
+        Joy of Cooking Thanksgiving ↗</p>
+        </div>
+    </a>
+</div>
+
+
+<!-- grid-column-start:;
+grid-column-end:; -->
+
+
+  <div class="
+    item 
+    item_3
+    
+    &p"
+    >
+    <a href="https://moriartynaps.org/stranger-music/" target="_blank" class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/works/stranger-music.png);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link item_link_dark"
+        >
+        Stranger Music ↗</p>
+        </div>
+    </a>
+</div>
+
+
+<!-- grid-column-start:1;
+grid-column-end:5; -->
+
+
+  <div class="
+    item 
+    item_3
+    
+    &n &i"
+    >
+    <a href="https://www.washingtonpost.com/weather/interactive/2022/holiday-snow-chances-us-cities/" target="_blank" class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/works/snowy.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link item_link_dark"
+        >
+         ↗</p>
+        </div>
+    </a>
+</div>
+
+
+<!-- grid-column-start:1;
+grid-column-end:5; -->
+
+
+  <div class="
+    item 
+    item_2
+    
+    &n"
+    >
+    <a href="https://www.washingtonpost.com/climate-environment/interactive/2023/cloud-shapes-height-sky-climate/" target="_blank" class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/works/sky-height.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link "
+        >
+        How High is the Sky? ↗</p>
+        </div>
+    </a>
+</div>
+
+
+<!-- grid-column-start:;
+grid-column-end:; -->
+
+
+  <div class="
+    item 
+    item_4
+    
+    &i &p"
+    >
+    <a href="https://moriartynaps.org/midnight-arrivial/" target="_blank" class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/works/midnight.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link "
+        >
+        Midnight Arrival ↗</p>
+        </div>
+    </a>
+</div>
+
+
+<!-- grid-column-start:;
+grid-column-end:; -->
+
+
+  <div class="
+    item 
+    item_2
+    
+    &n"
+    >
+    <a href="https://www.wsj.com/articles/americas-imports-are-stuck-on-ships-floating-just-off-los-angeles-11617183002" target="_blank" class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/works/offshore.gif);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link item_link_dark"
+        >
+        LA Port Log Jam ↗</p>
+        </div>
+    </a>
+</div>
+
+
+<!-- grid-column-start:1;
+grid-column-end:5; -->
+
+
+  <div class="
+    item 
+    item_3
+    
+    &n"
+    >
+    <a href="https://www.wsj.com/articles/maps-how-protests-evolved-in-the-wake-of-george-floyds-killing-11591984846" target="_blank" class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/works/protest.gif);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link item_link_dark"
+        >
+        George Floyd Killing Protests ↗</p>
+        </div>
+    </a>
+</div>
+
+
+<!-- grid-column-start:1;
+grid-column-end:5; -->
+
+
+  <div class="
+    item 
+    item_3
+    
+    &i &p &m"
+    >
+    <a href="https://dylanmoriarty.github.io/red-panda-map/" target="_blank" class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/works/pandas.png);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link item_link_dark"
+        >
+        Red Pandas of the World ↗</p>
+        </div>
+    </a>
+</div>
+
+
+<!-- grid-column-start:1;
+grid-column-end:5; -->
+
+
+  <div class="
+    item 
+    item_1
+    
+    &p"
+    >
+    <a href="https://moriartynaps.org/maps-from-isolation/" target="_blank" class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/works/isolation.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link item_link_dark"
+        >
+        Maps from Isolation ↗</p>
+        </div>
+    </a>
+</div>
+
+
+<!-- grid-column-start:1;
+grid-column-end:5; -->
+
+
+  <div class="
+    item 
+    item_2
+    
+    &p &m"
+    >
+    <a href="https://geobreakfastdc.github.io/" target="_blank" class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url(/assets/graphics/works/geobreakfast.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link item_link_dark"
+        >
+        Geobreakfast DC ↗</p>
+        </div>
+    </a>
+</div>
+
+
+<!-- grid-column-start:1;
+grid-column-end:5; -->
+
+
+</div>
+
+<script src="/assets/scripts/works.js"></script>
 
 </div>
 

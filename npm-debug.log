@@ -8,7 +8,7 @@
 4 verbose stack Error: ENOENT: no such file or directory, open '/Users/dmoriarty/code/maps/package.json'
 4 verbose stack     at Error (native)
 5 verbose cwd /Users/dmoriarty/code/maps
-6 error Darwin 23.1.0
+6 error Darwin 23.5.0
 7 error argv "/Users/dmoriarty/.nvm/versions/node/v6.9.0/bin/node" "/Users/dmoriarty/.nvm/versions/node/v6.9.0/bin/npm" "run" "serve"
 8 error node v6.9.0
 9 error npm  v3.10.8

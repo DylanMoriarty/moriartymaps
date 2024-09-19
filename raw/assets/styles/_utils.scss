@@ -14,6 +14,8 @@ $rainGreen: #44cb4f;
 $rainBlue: #52c7bd;
 $rainPurple: #a16e9f;
 
+$warmBG: #e1dcd7;
+
 .clearfix:after {
   content: "";
   display: table;
@@ -33,3 +35,7 @@ $laptop:        800px;
 }
 
 .white-bg { background-color: white; }
+
+.hidden {
+  display: none !important;
+}
