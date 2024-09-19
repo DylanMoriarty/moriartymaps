@@ -1,0 +1,20 @@
+# System files
+.DS_Store
+.sass-cache
+.bundle
+bundle
+
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+
+# Local
+node_modules
+.tmp
+_config-dev.yml
+npm-debug.log
+
+#Foundation additions
+.sass-cache
+config
