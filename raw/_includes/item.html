@@ -1,10 +1,29 @@
 <div class="
-    item {% if include.half %}item_half{% endif %}
-    {% if include.black %}item_black{% endif %}"
->
-    <a href="{{ include.link }}" target="_blank" class="no_underline">
-        <img 
-            src={{site.baseurl}}/assets/graphics/{{include.type}}/{{include.img}}/>
+    item 
+    {% if include.size %}item_{{include.size}}{% endif %}
+    {% if include.dir %}item_dir_{{include.dir}}{% endif %}
+    {{ include.cats }}"
+    >
+    <a href="{{ include.link }}" {% if include.link !="#" %}target="_blank"{% endif %} class="no_underline">
+        <div
+            class="item_image"
+            style="
+            background:url({{site.baseurl}}/assets/graphics/{{include.type}}/{{include.img}});
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center top;"
+        >
+            <div class="darkness"></div>
+        </div>
+        <div class="text_container">
+            <p
+            class="item_link {% if include.dark %}item_link_dark{% endif %}"
+        >
+        {{ include.descrip }}{% if include.link !="#" %} ↗{% endif %}</p>
+        </div>
     </a>
-    <p><a href='{{ include.link }}' target="_blank">{{ include.linkname }} ↗</a>, {{ include.descrip }}</p>
 </div>
+
+
+<!-- grid-column-start:{{ include.start }};
+grid-column-end:{{ include.end }}; -->
