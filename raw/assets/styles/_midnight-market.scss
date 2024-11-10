@@ -1,0 +1,37 @@
+#market-cont {
+    background-color: #111;
+    height: 100vh;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    h1 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .line {
+        background-color: #666;
+    }
+
+    footer {
+        color: #666;
+        border-color: #666;
+        height: 40px;
+        margin: 0;
+        padding: 0;
+        background-color: #111;
+
+        .centerme {
+            padding: 12px 0;
+        }
+
+        a { color: #666; }
+    }
+}
+
+.market-bits {
+    height: calc(100vh - 40px);
+    width: 100%;
+}
