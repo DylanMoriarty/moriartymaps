@@ -5,4 +5,7 @@ all-optim:
 	imageoptim 'raw/assets/graphics'
 
 optim:
-	imageoptim 'raw/assets/graphics/posts/$(POST)'
+	imageoptim -a raw/assets/graphics/$(TYPE)/*
+
+# imageoptim 'raw/assets/illo-maps/'
+# imageoptim 'raw/assets/illo-not-maps/'

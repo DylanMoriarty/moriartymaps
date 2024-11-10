@@ -2,9 +2,10 @@
     item 
     {% if include.size %}item_{{include.size}}{% endif %}
     {% if include.dir %}item_dir_{{include.dir}}{% endif %}
+    {% if include.link =='#0' %}item_no-cursor{% endif %}
     {{ include.cats }}"
     >
-    <a href="{{ include.link }}" {% if include.link !="#" %}target="_blank"{% endif %} class="no_underline">
+    <a href="{{ include.link }}" {% if include.link !="#0" %}target="_blank"{% endif %} class="no_underline">
         <div
             class="item_image"
             style="
@@ -19,7 +20,7 @@
             <p
             class="item_link {% if include.dark %}item_link_dark{% endif %}"
         >
-        {{ include.descrip }}{% if include.link !="#" %} ↗{% endif %}</p>
+        {{ include.descrip }}{% if include.link !="#0" %} ↗{% endif %}</p>
         </div>
     </a>
 </div>
